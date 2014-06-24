@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11-jun-2014 8:26:53 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+  <class catalog="registro" name="co.edu.udea.drai.expsw.modelo.dto.Usuario" table="usuario">
+    <id name="cedula" type="string">
+      <column length="15" name="cedula"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="nombres" type="string">
+      <column length="60" name="nombres" not-null="true"/>
+    </property>
+    <property name="apellidos" type="string">
+      <column length="60" name="apellidos" not-null="true"/>
+    </property>
+    <property name="correo" type="string">
+      <column length="50" name="correo" not-null="true"/>
+    </property>
+    <property name="programa" type="string">
+      <column length="50" name="programa" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
